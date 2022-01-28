@@ -8,10 +8,10 @@ import java.util.Objects;
 public class Account {
     private final static Logger log = LoggerFactory.getLogger(Account.class);
 
-    private int accountNumber;
+    private String accountNumber;
     private int balance;
 
-    public Account(int accountNumber, int balance) {
+    public Account(String accountNumber, int balance) {
         this.accountNumber = accountNumber;
         this.balance = balance;
     }
@@ -21,11 +21,11 @@ public class Account {
         log.info("Saldo: " + balance);
     }
 
-    public int getAccountNumber() {
+    public String getAccountNumber() {
         return accountNumber;
     }
 
-    public void setAccountNumber(int accountNumber) {
+    public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
 
